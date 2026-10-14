@@ -1,15 +1,13 @@
-
 package com.example;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-class AdditionTest {
-
+class EvenOddTest {
     @Test
-    void testAddition() {
-        Addition obj = new Addition();
-
-        assertEquals(15, obj.add(10, 5));
+    void testEvenOdd() {
+        EvenOdd obj = new EvenOdd();
+        assertTrue(obj.isEven(8));
+        assertFalse(obj.isEven(7));
     }
 }
